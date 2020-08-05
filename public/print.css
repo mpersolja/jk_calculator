@@ -1,0 +1,17 @@
+#panes {
+    display: none;
+    visibility: hidden;
+}
+
+.split {
+    display: block;
+}
+
+.split>div:first-child {
+    display: none;
+    visibility: hidden;
+}
+
+.split>div:last-child {
+    width: 100%;
+}

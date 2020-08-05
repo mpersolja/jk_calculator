@@ -1,0 +1,42 @@
+[
+    {
+      "name": "base-0",
+      "code": "B-0",
+      "price": 2250.52
+    },
+    {
+      "name": "base-1",
+      "code": "B-1",
+      "price": 1916.83
+    },
+    {
+      "name": "base-2",
+      "code": "B-2",
+      "price": 2825.36
+    },
+    {
+      "name": "base-3",
+      "code": "B-3",
+      "price": 1181.18
+    },
+    {
+      "name": "base-4",
+      "code": "B-4",
+      "price": 1215.36
+    },
+    {
+      "name": "base-5",
+      "code": "B-5",
+      "price": 3215.38
+    },
+    {
+      "name": "base-6",
+      "code": "B-6",
+      "price": 2840.32
+    },
+    {
+      "name": "base-7",
+      "code": "B-7",
+      "price": 2936.66
+    }
+  ]

@@ -70,10 +70,10 @@ import { mapGetters } from 'vuex';
     padding-left: 0;
   }
   li {
-    margin: 5px 0;
+    margin: .6rem 0;
   }
   li:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,.1);
+    background-color: #C2DFE3;
   }
 </style>

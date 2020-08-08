@@ -24,27 +24,45 @@
 </script>
 
 <style>
+  body {
+    background-color: #E0FBFC;
+  }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    margin: 60px 0;
+    color: #253237;
+    margin: 2rem 0;
   }
 
   .split {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+
+
+  .split>div {
+    padding: 2rem;
+    width: 40%;
   }
 
   .split>div:first-child {
-    width: 40%;
-    /* background-color: bisque; */
+    border-right: 1px solid rgba(92,107,115,.1);
   }
 
-  .split>div:last-child {
-    width: 40%;
-    background-color: lightskyblue;
+  @media screen and (max-width: 535px) {
+    .split {
+      display: block;
+    }
+
+    .split>div {
+      width: auto;
+    }
+
+    .split>div:first-child {
+      border-right: 0;
+    }
   }
 </style>

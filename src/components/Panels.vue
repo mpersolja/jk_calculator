@@ -1,27 +1,29 @@
 <template>
-  <ul id="panes">
-    <li>
-      <div
-        @click="toggleClass($event)"
-        :class="{ 'active': active == 'A' }"
-        id="A"></div>
-      <p>A</p>
-    </li>
-    <li>
-      <div
-        @click="toggleClass($event)"
-        :class="{ 'active': active == 'B' }"
-        id="B"></div>
-      <p>B</p>
-    </li>
-    <li>
-      <div
-        @click="toggleClass($event)"
-        :class="{ 'active': active == 'C' }"
-        id="C"></div>
-      <p>C</p>
-    </li>
-  </ul>
+  <div class="center">
+    <ul id="panes">
+      <li>
+        <div
+          @click="toggleClass($event)"
+          :class="{ 'active': active == 'A' }"
+          id="A"></div>
+        <p>A</p>
+      </li>
+      <li>
+        <div
+          @click="toggleClass($event)"
+          :class="{ 'active': active == 'B' }"
+          id="B"></div>
+        <p>B</p>
+      </li>
+      <li>
+        <div
+          @click="toggleClass($event)"
+          :class="{ 'active': active == 'C' }"
+          id="C"></div>
+        <p>C</p>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -43,27 +45,27 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#panes {
-  display: flex;
-  justify-content: center;
-}
-#panes li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.center {
   text-align: center;
-  padding: 20px 20px;
+}
+
+#panes {
+  display: inline-block;
+}
+
+#panes li {
+  display: inline-block;
+  padding: 0 1rem;
 }
 
 #panes li div {
-  height: 150px;
-  width: 20px;
-  background-color: blue;
+  height: 10rem;
+  width: 2rem;
+  background-color: #5c6b73;
 }
 
 #panes li div.active {
-  background-color: red;
+  background-color: #9DB4C0;
 }
 </style>

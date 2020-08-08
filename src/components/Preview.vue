@@ -43,11 +43,10 @@
       </li>
     </ul>
     <h3>Total <span>{{ grandTotal | ammount }}</span></h3>
-    <pre v-if="productionCode">
-Production code:
-
-{{ productionCode }}
-</pre>
+    <div v-if="productionCode" class="mt-40">
+      <pre>Production code:</pre>
+      <pre>{{ productionCode }}</pre>
+    </div>
   </div>
 </template>
 
@@ -151,10 +150,26 @@ Production code:
 
   li:hover {
     cursor: url('../assets/equis.png'), auto;
-    background-color: azure;
+    background-color: #C2DFE3;
   }
 
   li>span:last-child {
     float: right;
+  }
+
+  h3 span {
+    float: right;
+    color: #5c6b73;
+  }
+
+  .mt-40 {
+    margin-top: 2rem;
+  }
+
+  .mt-40 pre:last-child {
+    border: 1px solid #5c6b73;
+    padding: 1rem .5rem;
+    font-weight: bold;
+    color: #5c6b73;
   }
 </style>
